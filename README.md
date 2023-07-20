@@ -8,6 +8,7 @@
       - [Internal Infrastructure Layout](#internal-infrastructure-layout)
   - [Incident Response Phases](#incident-response-phases)
     - [Preparation](#preparation)
+    - [Detection and Analysis](#detection-and-analysis-1)
 
 ## Detection and Analysis
 
@@ -38,7 +39,9 @@ Passive information gathering for external presence and possible malicious activ
 
 #### Internal Infrastructure Layout
 
-- Documentation and Asset List
+- Documentation
+- Asset List
+- Network Diagram
 - Management and Monitoring Tools
 
 
@@ -54,3 +57,17 @@ Passive information gathering for external presence and possible malicious activ
 There are several resouces that are helpful during the preparation phase:
 - [NIST 800-61r2 Computer Security Incident Handling Guide](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)
 - [NIST 800-86 Guide to Integrating Forensic Techniques into Incident Response](https://csrc.nist.gov/publications/detail/sp/800-86/final)
+
+Besides the guides above, it is vital to be familiar with following tools during incident response:
+- Local virtualization capabilities to load a variety of OS
+- Local file sharing capabilities to put and pull artifacts and agents from an affected CI
+- Optionally deploy a separate Internet mobile connection for Incident Response Network or Node
+- Initial portable Triage tools can include 
+  - [sysinternalsSuite](https://learn.microsoft.com/en-us/sysinternals/)
+  - [WinPmem](https://github.com/Velocidex/WinPmem)
+  - [RawCap](https://www.netresec.com/?page=RawCap)
+
+Finally, incident response playbooks are very useful to automate the triage process.
+
+### Detection and Analysis
+
